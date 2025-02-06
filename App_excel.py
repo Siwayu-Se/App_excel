@@ -6,7 +6,7 @@ from io import BytesIO
 background_image_url = "https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
 # กำหนดสีที่ต้องการ
-text_color = "#FFFFFF"  # สีที่คุณต้องการ
+text_color = "#FFCC99"  # สีที่คุณต้องการ
 
 # ใส่ CSS สำหรับพื้นหลังและสีตัวอักษร
 st.markdown(
