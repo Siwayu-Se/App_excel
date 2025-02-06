@@ -2,6 +2,31 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
+# กำหนด URL หรือเส้นทางของภาพพื้นหลัง
+background_image_url = "https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+# กำหนดสีที่ต้องการ
+text_color = "#FFFFFF"  # สีที่คุณต้องการ
+
+# ใส่ CSS สำหรับพื้นหลังและสีตัวอักษร
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url('{background_image_url}');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }}
+    h1, h2, h3, p, div {{
+        color: {text_color} !important;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # ส่วนอัปโหลดไฟล์ Excel
 uploaded_file = st.file_uploader("อัปโหลดไฟล์ Excel", type="xlsx")
 
